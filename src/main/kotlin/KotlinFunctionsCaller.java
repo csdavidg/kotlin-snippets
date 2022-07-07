@@ -1,8 +1,9 @@
 import strings.StringFunctions;
 
 import java.util.List;
+import java.util.stream.IntStream;
 
-public class KotlinFunctionsCaller implements Clickable{
+public class KotlinFunctionsCaller implements Clickable {
 
     public static void main(String[] args) {
         List<String> list = List.of("a", "b", "c");

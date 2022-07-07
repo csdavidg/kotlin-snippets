@@ -1,4 +1,4 @@
-class Person(val name: String, var married: Boolean)
+class Person1(val name: String, var married: Boolean)
 fun main(args: Array<String>) {
     println("Hello World!")
 
@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
 
     println(max(a,b))
 
-    val person = Person("Cristian", false)
+    val person = Person1("Cristian", false)
     println("${person.name} is married ${person.married}")
     person.married = true
     println("${person.name} is married ${person.married}")
