@@ -1,9 +1,9 @@
 fun main(vars:Array<String>) {
 
-    val rectangle = Rectangle(4,4)
+    val rectangle = BasicRectangle(4,4)
     println(rectangle.isSquare)
 
-    val rectangle2 = Rectangle(4,6)
+    val rectangle2 = BasicRectangle(4,6)
     println(rectangle2.isSquare)
 
     println(Color.BLUE.rgb())
@@ -16,7 +16,7 @@ fun main(vars:Array<String>) {
     validateColor(Color.INDIGO)
 }
 
-class Rectangle(val height : Int, val with: Int){
+class BasicRectangle(val height : Int, val with: Int){
 
     val isSquare: Boolean get() = height == with
 
