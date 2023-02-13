@@ -69,7 +69,7 @@ class InheritGetterProperty(override val email: String) : WithProperties
 
 fun main(args: Array<String>){
 
-    val objProperties = InheritGetterProperty("alejandra@gmail.com")
+    val objProperties = InheritGetterPro perty("alejandra@gmail.com")
     println("The email starts with A? : ${objProperties.emailStartsWitA}")
 
 
