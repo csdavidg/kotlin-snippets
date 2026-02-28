@@ -25,11 +25,11 @@ class Button : Clickable, Focusable {
 
 open class RichButton : Clickable {
 
-    fun disable(){
+    fun disable() {
 
     }
 
-    open fun animate(){
+    open fun animate() {
 
     }
 
@@ -41,35 +41,35 @@ open class RichButton : Clickable {
 
 abstract class Animated(val name: String) {
 
-    abstract fun animate() : String
+    abstract fun animate(): String
 
-    open fun stopAnimating(){
+    open fun stopAnimating() {
         println("Stop Animating")
     }
 
-    fun animateTwice(){
+    fun animateTwice() {
         println("Animate Again ${animate()}")
     }
 }
 
 class Car(private val carName: String) : Animated(carName) {
 
-    override fun animate() : String {
+    override fun animate(): String {
         return "Start engine ion $carName"
     }
 
 }
 
 interface WithProperties {
-    val email : String
-    val emailStartsWitA : Boolean get() = email.startsWith("a")
+    val email: String
+    val emailStartsWitA: Boolean get() = email.startsWith("a")
 }
 
 class InheritGetterProperty(override val email: String) : WithProperties
 
-fun main(args: Array<String>){
+fun main(args: Array<String>) {
 
-    val objProperties = InheritGetterPro perty("alejandra@gmail.com")
+    /*val objProperties = InheritGetterProperty("alejandra@gmail.com")
     println("The email starts with A? : ${objProperties.emailStartsWitA}")
 
 
@@ -84,4 +84,21 @@ fun main(args: Array<String>){
     println(car.animate())
     car.animateTwice()
     car.stopAnimating()
+
+    val value: String? = null
+    value.let {
+        println(it?.uppercase())
+    }*/
+}
+
+class CheckingInnerNested {
+    val name = "David"
+
+    class NestedExample {
+
+    }
+
+    inner class InnerExample {
+        fun getOuterName(): String = this@CheckingInnerNested.name
+    }
 }
